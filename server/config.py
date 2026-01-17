@@ -35,7 +35,7 @@ def create_app(env="dev"):
     db.init_app(app)
     migrate.init_app(app, db)
     api.init_app(app)
-
+    
     return app
 
 db = SQLAlchemy(metadata=metadata)
